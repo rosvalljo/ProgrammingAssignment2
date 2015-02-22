@@ -20,6 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
 # cacheSolve function returns the inverse of the matrix by first checking if
 # the inverse already exists. If (exists) then use cache and don't compute.
 # Prerequisites: matrix is invertible. Matrix must be square
+
 cacheSolve <- function(x, ...) {
   i <- x$getinverse()
   if(!is.null(i)) {
